@@ -73,10 +73,10 @@ app.post('/prequeue', function (req, res) {
 
     var response;
 
-    if (zip && zip.toString().length === 5 && name.first === 'James') {
+    if (zip && zip.toString().length === 5) {
       response = {
         decision: {
-          strategy: 'default',
+          strategy: 'last',
           message: 'queue chat'
         }
       };
